@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+         Scanner sc= new Scanner(System.in);
+         float a,b;
+         System.out.println("enter first number");
+         a=sc.nextFloat();
+         System.out.println("enter second number");
+         b=sc.nextFloat();
+         if (a>0 && b>0 )
+         {
+            if(a>b)
+            {
+                System.out.println("the greater number is: " + a);
+            }
+            else if (b>a)
+            {
+                System.out.println("the greater number is: "+ b);
+            }
+            else if (a==b)
+            {
+                System.out.println("same numbers ");
+            }
+             
+         }
+         else {
+             System.out.println("enter positive number");
+         }
+        
+    }
+}
