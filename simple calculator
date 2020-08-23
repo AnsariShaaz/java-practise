@@ -1,0 +1,42 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter two numbers to perform operation ");
+		double num1=sc.nextInt();
+		double num2=sc.nextInt();
+		System.out.printf("Enter an operator(+, -, *, /) :");
+		char operator=sc.next().charAt(0);
+		
+		double result;
+		
+		switch (operator)
+		{
+		    case '+' :
+		        result = num1 + num2;
+		        break;
+		        
+		    case '-':
+		        result = num1 - num2;
+		        break;
+		    case '*':
+		        result = num1 * num2;
+		        break;
+		    case '/':
+		        result = num1 / num2;
+		        break;
+		    default :
+		        System.out.println("error found");
+		        return;
+		}
+		 System.out.printf("%.1f %c %.1f = %.1f ", num1,operator,num2, result);
+	}
+}
